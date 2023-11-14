@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <img class="logo" src="./imagens/Logo.png" alt="Logo">
+    </header>
+    <main class="principal">
+        <div class="all2">
+            <input id="texto" placeholder="Digite seu texto" onfocusout="desligado()" type="text" value="" onclick="teste" class="text">
+        </div>
+        <div class="all">
+            <img id="image" class="conteudo" src="./imagens/High quality products 1 1.png" alt="character">
+            <h2 id="msg__principal" class="msg__principal">Nenhuma mensagem encontrada</h2>
+            <p id="msg__paragrafo" class="msg__paragrafo">Digite um texto que você deseja criptografar ou descriptografar.</p>
+            <p id="teste" class="teste"></p>
+            <button3 id="copia" class="copiar">Copiar</button>
+        </div>
+    </main>
+    <footer class="rodape">
+        <div class="all4">
+            <img class="exclamation" src="./imagens/bi_exclamation-circle-fill.png" alt="Exclamation">
+            <p class="msg__paragrafo2">Apenas letras minúsculas e sem acento.</p>
+        </div>
+
+        <div class="all3">
+            <button1 id="but" type="button" onclick="criptografar()" value="Criptografar" class="criptografar">Criptografar</button1>
+            <button2 type="button" onclick="" value="Descriptografar" class="descriptografar">Descriptografar</button2>
+        </div>
+    </footer>
+</body>
+<script src="./js/cripto.js"></script>
+</html>
