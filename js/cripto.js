@@ -19,10 +19,6 @@ function criptografar()
     var resposta = document.getElementById("teste").style.display = ("block");
     var texto = document.getElementById("teste").textContent = txt;
 
-    /*var str = texto.replace(/a([^a]*)/gm,  "ai$1").replace(/e([^e]*)/gm,  "enter$1")
-    .replace(/i([^]*)/gm,  "imes$1").replace(/o([^o]*)/gm,  "ober$1")
-    .replace(/u([^u]*)/gm,  "ufat$1");*/
-
     var str = texto.replace(/e([^e]*)/gm,  "enter$1").replace(/i([^i]*)/gm,  "imes$1")
     .replace(/a([^a]*)/gm,  "ai$1").replace(/o([^o]*)/gm,  "ober$1")
     .replace(/u([^u]*)/gm,  "ufat$1");
