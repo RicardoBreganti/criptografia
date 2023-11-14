@@ -19,8 +19,12 @@ function criptografar()
     var resposta = document.getElementById("teste").style.display = ("block");
     var texto = document.getElementById("teste").textContent = txt;
 
-    var str = texto.replace(/a([^a]*)/gm,  "ai$1").replace(/e([^e]*)/gm,  "enter$1")
+    /*var str = texto.replace(/a([^a]*)/gm,  "ai$1").replace(/e([^e]*)/gm,  "enter$1")
     .replace(/i([^]*)/gm,  "imes$1").replace(/o([^o]*)/gm,  "ober$1")
+    .replace(/u([^u]*)/gm,  "ufat$1");*/
+
+    var str = texto.replace(/e([^e]*)/gm,  "enter$1").replace(/i([^i]*)/gm,  "imes$1")
+    .replace(/a([^a]*)/gm,  "ai$1").replace(/o([^o]*)/gm,  "ober$1")
     .replace(/u([^u]*)/gm,  "ufat$1");
 
     var texto = document.getElementById("teste").textContent = str;
@@ -35,8 +39,8 @@ function descriptografar()
                     
     var texto = document.getElementById("teste").textContent = txt;
 
-    var str = texto.replace(/ai([^ai]*)/gm, "a$1").replace(/enter([^enter]*)/gm, "e$1")
-    .replace(/imes([^]*)/gm, "i$1").replace(/ober([^ober]*)/gm, "o$1")
+    var str = texto.replace(/enter([^enter]*)/gm, "e$1").replace(/imes([^imes]*)/gm, "i$1")
+    .replace(/ai([^ai]*)/gm, "a$1").replace(/ober([^ober]*)/gm, "o$1")
     .replace(/ufat([^ufat]*)/gm, "u$1");
 
     var principal = document.getElementById("msg__principal").style.display = ("none");
